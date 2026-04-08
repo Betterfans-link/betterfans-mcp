@@ -1,0 +1,49 @@
+{
+  "name": "@betterfans/mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for the BetterFans Link SDK — the OnlyFans API. Gives AI coding assistants (Claude Code, Cursor, Windsurf) access to OnlyFans API documentation, guides, and code examples.",
+  "keywords": [
+    "onlyfans",
+    "onlyfans-api",
+    "onlyfans-sdk",
+    "onlyfans-bot",
+    "onlyfans-automation",
+    "onlyfans-chatbot",
+    "onlyfans-crm",
+    "onlyfans-agency",
+    "ofmanager",
+    "betterfans",
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "ai-tools",
+    "claude-code",
+    "cursor"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Betterfans-link/betterfans-mcp.git"
+  },
+  "homepage": "https://betterfans.link",
+  "type": "module",
+  "bin": {
+    "betterfans-mcp": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  }
+}
