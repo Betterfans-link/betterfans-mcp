@@ -1,46 +1,56 @@
 {
   "name": "@betterfans/mcp-server",
-  "version": "1.0.0",
-  "description": "MCP server for the BetterFans Link SDK — the OnlyFans API. Gives AI coding assistants (Claude Code, Cursor, Windsurf) access to OnlyFans API documentation, guides, and code examples.",
+  "version": "2.0.0",
+  "description": "BetterFans Link MCP server for stdio clients: the OnlyFans and Fansly API docs with no key, and the hosted BetterFans Link tools with an API key.",
   "keywords": [
     "onlyfans",
     "onlyfans-api",
-    "onlyfans-sdk",
-    "onlyfans-bot",
-    "onlyfans-automation",
-    "onlyfans-chatbot",
-    "onlyfans-crm",
+    "fansly",
+    "fansly-api",
     "onlyfans-agency",
-    "ofmanager",
+    "onlyfans-crm",
+    "onlyfans-chatbot",
     "betterfans",
+    "betterfans-link",
     "mcp",
     "mcp-server",
     "model-context-protocol",
-    "ai-tools",
+    "claude",
     "claude-code",
-    "cursor"
+    "cursor",
+    "ai-agents"
   ],
   "license": "MIT",
+  "author": "BetterFans Link <hello@betterfans.link>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Betterfans-link/betterfans-mcp.git"
+    "url": "git+https://github.com/Betterfans-link/betterfans-mcp.git"
   },
-  "homepage": "https://betterfans.link",
+  "homepage": "https://betterfans.link/docs/mcp",
+  "bugs": {
+    "url": "https://github.com/Betterfans-link/betterfans-mcp/issues",
+    "email": "hello@betterfans.link"
+  },
   "type": "module",
   "bin": {
     "betterfans-mcp": "./dist/index.js"
   },
   "main": "./dist/index.js",
   "files": [
-    "dist"
+    "dist",
+    "README.md",
+    "LICENSE"
   ],
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "build": "tsc",
-    "dev": "tsc --watch"
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.12.1",
-    "zod": "^4.3.6"
+    "@modelcontextprotocol/sdk": "^1.32.1"
   },
   "devDependencies": {
     "@types/node": "^22.0.0",
